@@ -1,0 +1,24 @@
+# Ignore files in repository working files
+
+# Ignore test output files written to do basic comparison with input
+*.testout
+
+# Ignore compiled Fotrtan files
+*.exe
+*.o
+*.mod
+
+# Ignore log files
+*.log
+
+# vim editor files
+
+*.swp
+*.swo
+
+# Microsoft temporary files
+*.tmp
+~$*
+
+# Ignore file extension used as temporary for .bat, etc. so email attachment works
+*.xxx

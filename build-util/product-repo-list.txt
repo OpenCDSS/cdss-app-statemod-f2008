@@ -1,0 +1,6 @@
+# Repositories that comprise StateMod Fortran 2008
+# - assumes that local folder name will match the repository name
+cdss-app-statemod-f2008
+#cdss-lib-cdss-python
+#cdss-lib-common-python
+#cdss-lib-models-python
