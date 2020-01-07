@@ -19,13 +19,13 @@ CDSS prototype of StateMod written in object-oriented Fortran
 The code in this repository was ported from Java and legacy Fortran code
 to evaluate which programming language(s) may be suitable for
 converting the StateMod software from Fortran to another language.
-This prototype focuses on reading the diversion station (`*.dds`) file.
+This limited prototype focuses on implementing classes for StateMod diversion station and dataset.
 
 The main repositories for StateMod language evaluation prototypes are:
 
-* Java:  this repository
 * C#:  [cdss-app-statemod-cs](https://github.com/OpenCDSS/cdss-app-statemod-cs) 
-* Fortran 2008:  [cdss-app-statemod-f2008](https://github.com/OpenCDSS/cdss-app-statemod-f2008) 
+* Fortran 2008:  this repository
+* Java:  [cdss-app-statemod-java](https://github.com/OpenCDSS/cdss-app-statemod-java) 
 * Python:  [cdss-app-statemod-python](https://github.com/OpenCDSS/cdss-app-statemod-java)
 
 ## Repository Contents ##
@@ -52,6 +52,7 @@ C:\Users\user\                                 User's home folder for Windows.
       ---- below here folder names should match exactly ----
       git-repos/                               Git repositories for the StateMod Fortran application.
         cdss-app-statemod-f2008/               Statemod Fortran main application code (this repo).
+        ... other repos can be added...
 ```
 
 This repository contains the following:
@@ -78,7 +79,10 @@ To set up the development environment follow the normal
 [StateMod Development Manual](http://opencdss.state.co.us/statemod/latest/doc-dev/).
 Use `make` and `gfortran` compiler to compile the code in this repository.
 
-## Compiling
+A text editor and command-line compiling was used for the prototype,
+not Eclipse Photran or other IDE.
+
+## Compiling Prototype ##
 
 To compile the prototype:
 
@@ -88,11 +92,13 @@ To compile the prototype:
 4. `cd` to the `src` folder.
 5. Run `make` to see options.  Run `make statemod` to compile the executable.
 
+Repeat step 5 after editing files.
+
 ## Running Prototype ##
 
 To run the prototype, use a Git Bash window or Windows Command shell and run the
 `statemod-oo-gfortran-win-32bit.exe` program in the `src` folder.
-This will run the prototype executable process fabricated data.
+This will run the prototype executable to process fabricated data.
 
 ## Contributing ##
 
